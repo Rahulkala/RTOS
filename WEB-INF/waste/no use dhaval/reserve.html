@@ -1,0 +1,122 @@
+<html>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style3 {font-weight: bold}
+.style4 {
+	font-weight: bold;
+	color: #0000FF;
+}
+.style5 {
+	color: #0000CC;
+	font-weight: bold;
+}
+.style8 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style10 {
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 18px;
+}
+.style11 {color: #00CC00; font-weight: bold; font-size: 18px; }
+.style12 {font-size: 18px}
+-->
+</style>
+<head>
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("onereserved"))
+  {
+  element.src="images/one.jpg";
+  }
+else
+  {
+  element.src="images/onereserved.jpg";
+  }
+}
+</script>
+      
+
+
+<title>reservation</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="header"></div>
+<div id="left">
+<ul>
+<li><a href=#">Registration</a></li>
+<li><a href="#">Online order</a></li>
+<li><a href="#">Restaurant order</a></li>
+<li><a href="C:\files\dream weaver\printbill.html">Bill</a></li>
+</ul>
+
+
+</div> <!--left-->
+<!--center-->
+
+<br>
+<br><table width="979" border="3" bgcolor="#FFFFFF">
+
+<tr>
+    <td width="234" height="54"> <div align="center" class="style5"><font size="3">TABLE NO</font></div></td>
+    <td width="233"><div align="center" class="style4"><font size="3">CURRENT STATUS</font></div></td>
+    <td width="220"><div align="center" class="style4"><font size="3">CURRENT ORDER</font></div></td>
+    <td width="175"><div align="center" class="style4"><strong><font size="3">CURRENT RS.</font></strong></div></td>
+  </tr>
+  <tr>
+    <td height="59" rowspan="2"><div align="center"><span class="style3"><font size="4">1</font></span></div></td>
+    <td height="34"><p align="center">
+        <span class="style10">
+        <input name="a" type="radio" value="OCCUPIED"/>
+        OCCUPIED</span>
+    <br>
+    </td>
+    <td rowspan="2"><div align="center" class="style8"><a href="C:\files\dream weaver\currentbill.html" class="style12" link >CURRENT MENU</a></div></td>
+    <td rowspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="33"><div align="center" class="style11">
+      
+      <input type="radio" name="a" value="AVAILABLE"/>
+      AVAILABLE</div></td>
+  </tr>
+  <tr>
+    <td height="59" rowspan="2"><div align="center"><span class="style3"><font size="4">2</font></span></div></td>
+    <td height="34"><p align="center">
+        <span class="style10">
+        <input name="b" type="radio" value="OCCUPIED"/>
+        OCCUPIED</span>
+    <br>
+    </td>
+    <td rowspan="2"><div align="center" class="style8"><a href="C:\files\dream weaver\table2.html" class="style12" link >CURRENT MENU</a></div></td>
+    <td rowspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="33"><div align="center" class="style11">
+      
+      <input type="radio" name="b" value="AVAILABLE"/>
+      AVAILABLE</div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

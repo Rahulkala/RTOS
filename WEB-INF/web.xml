@@ -1,0 +1,255 @@
+<web-app>
+	
+	<welcome-file-list>
+	
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<listener>
+	
+		<listener-class>com.rtos.listener.Startuplistener</listener-class>
+	</listener>
+	<context-param>
+		
+		<param-name>driver</param-name>
+		<!--<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>-->
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>
+	<context-param>
+		
+		<param-name>connection</param-name>
+		<!--<param-value>jdbc:odbc:rtos</param-value>-->
+		<param-value>jdbc:mysql://localhost:3306/restaurant</param-value>
+	</context-param>
+	<context-param>
+	
+		<param-name>db-user</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+	
+		<param-name>db-pwd</param-name>
+		<param-value></param-value>
+	</context-param>
+	<!--<servlet>
+	
+		<servlet-name>welcome</servlet-name>
+		<servlet-class>com.rtos.servlet.Welcomeservlet</servlet-class>
+	</servlet>-->
+	<jsp-config> 
+        <taglib>  
+               <taglib-location>/WEB-INF/tld/c.tld</taglib-location> 
+			   <taglib-uri>coretag</taglib-uri>
+        </taglib>
+		<taglib>  
+               <taglib-location>/WEB-INF/tld/fmt.tld</taglib-location> 
+			   <taglib-uri>formattag</taglib-uri>
+        </taglib>
+	</jsp-config>
+	<servlet>
+	
+		<servlet-name>category</servlet-name>
+		<servlet-class>com.rtos.servlet.NewCategoryservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>item</servlet-name>
+		<servlet-class>com.rtos.servlet.NewItemservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>reg</servlet-name>
+		<servlet-class>com.rtos.servlet.NewAccountservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.rtos.servlet.Loginservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>logout</servlet-name>
+		<servlet-class>com.rtos.servlet.Logoutservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>order</servlet-name>
+		<servlet-class>com.rtos.servlet.Orderservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>cart</servlet-name>
+		<servlet-class>com.rtos.servlet.Cartservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>update</servlet-name>
+		<servlet-class>com.rtos.servlet.UpdateItemservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>delete</servlet-name>
+		<servlet-class>com.rtos.servlet.DeleteItemservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>change</servlet-name>
+		<servlet-class>com.rtos.servlet.Changepwdservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>changeinfo</servlet-name>
+		<servlet-class>com.rtos.servlet.Changeinfoservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>mobile</servlet-name>
+		<servlet-class>com.rtos.servlet.mobile.Mobileservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>manager</servlet-name>
+		<servlet-class>com.rtos.servlet.Managerservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>table</servlet-name>
+		<servlet-class>com.rtos.servlet.Tableservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>deltable</servlet-name>
+		<servlet-class>com.rtos.servlet.DeleteTableservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>bill</servlet-name>
+		<servlet-class>com.rtos.servlet.Billservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>tablebooking</servlet-name>
+		<servlet-class>com.rtos.servlet.Tablebookingservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>unbook</servlet-name>
+		<servlet-class>com.rtos.servlet.Tableundobookingservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>mobiledata</servlet-name>
+		<servlet-class>com.rtos.servlet.mobile.Mobileitemservlet</servlet-class>
+	</servlet>
+	<servlet>
+	
+		<servlet-name>changecust</servlet-name>
+		<servlet-class>com.rtos.servlet.Changepwdcustservlet</servlet-class>
+	</servlet>
+	<!--<servlet-mapping>
+	
+		<servlet-name>welcome</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>-->
+	<servlet-mapping>
+	
+		<servlet-name>changecust</servlet-name>
+		<url-pattern>/changecust</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>mobiledata</servlet-name>
+		<url-pattern>/mobiledata</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>unbook</servlet-name>
+		<url-pattern>/unbook</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>tablebooking</servlet-name>
+		<url-pattern>/tablebooking</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>bill</servlet-name>
+		<url-pattern>/bill</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>deltable</servlet-name>
+		<url-pattern>/deltable</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>table</servlet-name>
+		<url-pattern>/table</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>manager</servlet-name>
+		<url-pattern>/manager</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>mobile</servlet-name>
+		<url-pattern>/mobile</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>changeinfo</servlet-name>
+		<url-pattern>/changeinfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>change</servlet-name>
+		<url-pattern>/change</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>cart</servlet-name>
+		<url-pattern>/cart</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>order</servlet-name>
+		<url-pattern>/order</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>category</servlet-name>
+		<url-pattern>/category</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>item</servlet-name>
+		<url-pattern>/item</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>reg</servlet-name>
+		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	
+		<servlet-name>login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

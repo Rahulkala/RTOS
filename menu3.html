@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>welcome</title>
+<meta name="keywords" content="tea and meal, free css templates, green color, white background, CSS, XHTML" />
+<meta name="description" content="Tea and Meal - Green Color, White Background, Free CSS Template provided by templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<br />
+<div id="templatemo_container">
+  <p><br />
+  </p>
+	   <div id="templatemo_header"><img src="images/text.jpg"/></div> 
+<!-- end of header -->
+    
+    <div id="templatemo_menu">
+        <ul>
+        	<li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="login.jsp"><b>Login</b></a>
+          </li>
+          <li><a href="topdishes.html"><b>Top Dishes</b></a></li>
+            <li class="current"><a href="menu3.html"><b>Menu</b></a></li>
+            <li><a href="#"><b>About-us</b></a></li>
+            <li ><a href="#"><b>Contact US</b></a></li>
+        </ul>
+</div> <!-- end of menu -->
+<script language="javascript">
+    function getItem(id)
+    {
+        var itm = false;
+        if(document.getElementById)
+            itm = document.getElementById(id);
+        else if(document.all)
+            itm = document.all[id];
+        else if(document.layers)
+            itm = document.layers[id];
+
+        return itm;
+    }
+    function toggleItem(id)
+    {
+        itm = getItem(id);
+      
+        if(!itm)
+            return false;
+
+        if(itm.style.display == 'none')
+            itm.style.display = '';
+        else
+            itm.style.display = 'none';
+
+        return false;
+    }
+    </script>
+<style>
+body
+{
+	background-color: white;
+	background-size:cover;
+	background-image:url(images/.jpg);
+	width:98%;
+	height:100%;
+}
+#header
+{
+	text-align: center;
+	width:96%;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:1.5%;
+	margin-bottom:1.5%;
+}
+a:link 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:visited 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:hover 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:active 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+h2
+{	font:Juice ITC;
+	text-align: center;
+}
+table 
+{
+	width: 90%;	
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom: 1em;	
+	border: 3px solid white;
+}
+caption 
+{
+	opacity: 0;
+	margin:0;
+	height: 0;
+}
+tr 
+{
+	background: rgb(251, 174, 44);
+}
+
+tr:nth-child(even) 
+{
+	background: rgb(249,228,130);
+}
+th 
+{
+	background: rgb(89,118,31);
+	color: white;
+	padding: .6em 1em .3em;
+	text-align: left;
+}
+
+th, td 
+{
+	vertical-align: middle;
+}	
+td 
+{
+	padding: .4em 1em;
+}
+</style>
+</head>
+<body background="C:\Users\kanan\Desktop\Arpan Buch\dh1269\images\collage.jpg">
+<div id=header><h1>&nbsp;</h1>
+</div><br>
+<div>
+<table>
+  <tbody>
+    <tr>
+      <th colspan=4><a href="#" onClick="toggleItem('myTbody')">
+        <h2>STARTERS</h2>
+      </a></th>
+    </tr>
+  </tbody>
+  <tbody id="myTbody" style="display:none;">
+    <tr>
+      <th width="18%" rowspan=2 scope="col">DISH NO.</th>
+      <th width="45%" rowspan=2 scope="col">ITEM</th>
+      <th width="13%" rowspan=2 scope="col">PRICE<br>
+      </th>
+      <th width="21%" rowspan=2 scope="col">QUANTITY</th>
+    </tr>
+    <tr> </tr>
+    <tr>
+      <td>1)</td>
+      <td>Spicy Baby Corn Satay</td>
+      <td>65/-</td>
+      <td><textarea rows="1" cols="1"></textarea><br></td>
+    </tr>
+    <tr>
+      <td>2)</td>
+      <td>Hara-Bhara Kabab</td>
+      <td>80/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>3)</td>
+      <td>Smoky-Paneer</td>
+      <td>70/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>4)</td>
+      <td>Paneer Fritters</td>
+      <td>100/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>5)</td>
+      <td>Vegetable cutlets</td>
+      <td>50/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+</table>
+</tbody>
+<table>
+  <tbody>
+    <tr>
+      <th colspan=4><a href="#" onClick="toggleItem('myTbody1')">
+        <h2>PUNJABI</h2>
+      </a></th>
+    </tr>
+  </tbody>
+  <tbody id="myTbody1" style="display:none;">
+    <tr>
+      <th width="18%" rowspan=2 scope="col">DISH NO.</th>
+      <th width="45%" rowspan=2 scope="col">ITEM</th>
+      <th width="13%" rowspan=2 scope="col">PRICE<br>
+      </th>
+      <th width="21%" rowspan=2 scope="col">QUANTITY</th>
+    </tr>
+    <tr> </tr>
+    <tr>
+      <td>1)</td>
+      <td>Paneer Tikka Masala</td>
+      <td>110/-</td>
+      <td><textarea rows="1" cols="1"></textarea><br></td>
+    </tr>
+    <tr>
+      <td>2)</td>
+      <td>Lasuni tawa</td>
+      <td>150/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>3)</td>
+      <td>Cheese Butter Masala</td>
+      <td>140/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>4)</td>
+      <td>Naan</td>
+      <td>20/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>5)</td>
+      <td>Plain Roti</td>
+      <td>15/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>5)</td>
+      <td>Cheese Naan</td>
+      <td>15/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+</table>
+</tbody>
+<table>
+  <tbody>
+    <tr>
+      <th colspan=4><a href="#" onClick="toggleItem('myTbody3')">
+        <h2>CHINESE</h2>
+      </a></th>
+    </tr>
+  </tbody>
+  <tbody id="myTbody3" style="display:none;">
+    <tr>
+      <th width="18%" rowspan=2 scope="col">DISH NO.</th>
+      <th width="45%" rowspan=2 scope="col">ITEM</th>
+      <th width="13%" rowspan=2 scope="col">PRICE<br>
+      </th>
+      <th width="21%" rowspan=2 scope="col">QUANTITY</th>
+    </tr>
+    <tr> </tr>
+    <tr>
+      <td>1)</td>
+      <td>American Chowpsey</td>
+      <td>70/-</td>
+      <td><textarea rows="1" cols="1"></textarea><br></td>
+    </tr>
+    <tr>
+      <td>2)</td>
+      <td>Veg. Manchurian(Gravy)</td>
+      <td>80/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>3)</td>
+      <td>Veg. Manchurian(Dry)</td>
+      <td>50/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>4)</td>
+      <td>Noodles</td>
+      <td>50/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>5)</td>
+      <td>Fried Rice</td>
+      <td>100/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+</table>
+</tbody>
+<table>
+  <tbody>
+    <tr>
+      <th colspan=4><a href="#" onClick="toggleItem('myTbody4')">
+        <h2>DESSERTS</h2>
+      </a></th>
+    </tr>
+  </tbody>
+  <tbody id="myTbody4" style="display:none;">
+    <tr>
+      <th width="18%" rowspan=2 scope="col">DISH NO.</th>
+      <th width="45%" rowspan=2 scope="col">ITEM</th>
+      <th width="13%" rowspan=2 scope="col">PRICE<br>
+      </th>
+      <th width="21%" rowspan=2 scope="col">QUANTITY</th>
+    </tr>
+    <tr> </tr>
+    <tr>
+      <td>1)</td>
+      <td>Chocolate Sundae</td>
+      <td>80/-</td>
+      <td><textarea rows="1" cols="1"></textarea><br></td>
+    </tr>
+    <tr>
+      <td>2)</td>
+      <td>American-Dry-Nuts(with choco dip)</td>
+      <td>100/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>3)</td>
+      <td>Golden Caramel Shake</td>
+      <td>135/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>4)</td>
+      <td>StrawBeryy chocolate Thick Shake</td>
+      <td>150/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+    <tr>
+      <td>5)</td>
+      <td>Chocolate Truffle</td>
+      <td>130/-</td>
+      <td><textarea rows="1" cols="1"></textarea></td>
+    </tr>
+</table>
+</tbody>
+
+    
+
+
+<div id="templatemo_footer">
+    
+    	<a href="index.html">Home</a> <a href="login.jsp">| login |</a> <a href="topdishes.html">Top Dishes</a> | <a href="#">Company</a> | <a href="#">FAQs</a> | <a href="#">Contact Us</a><br />
+        Designed by rahul dhruvraj dhaval arpan<span class="templatemo_footer">|&nbsp;</span></div> 
+<!-- end of footer -->
+<!--  Free CSS Templates by TemplateMo.com  --> 
+</div><!-- end of container -->
+</body>
+</html>

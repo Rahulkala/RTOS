@@ -1,0 +1,9 @@
+1) On start Conn class is initialized by Startuplistener by setting driver,connection,user and password.
+
+2) Startuplistener creates UserDAO object using object of connection class and set it as ServletContext object with name as "user".
+
+3) LoginServlet fetches the object of UserDAO and creates Auth object.
+
+4) LoginServlet uses Auth object to fetch UserInfo object by calling authenticate method of Auth class.
+
+5) for making the drop down list or simple list use the custom tag for iteration.

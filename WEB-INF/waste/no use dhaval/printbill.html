@@ -1,0 +1,103 @@
+<html>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: x-large;
+}
+-->
+</style>
+<head>
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("onereserved"))
+  {
+  element.src="images/one.jpg";
+  }
+else
+  {
+  element.src="images/onereserved.jpg";
+  }
+}
+</script>
+      
+
+
+<title>reservation</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="header"></div>
+<div id="left">
+<ul>
+<li><a href=#">Registration</a></li>
+<li><a href="#">Online order</a></li>
+<li><a href="#">Restaurant order</a></li>
+<li><a href="#">Bill</a></li>
+</ul>
+
+
+</div> <!--left-->
+<!--center-->
+<table width="826" height="275" border="4">
+  <tr>
+    <td width="64"><div align="center"><strong>ITEM NO.</strong></div></td>
+    <td width="307"><div align="center"><strong>ITEM NAME</strong></div></td>
+    <td width="134"><div align="center"><strong>RATE</strong></div></td>
+    <td width="130"><div align="center"><strong> QUANTITY</strong></div></td>
+    <td width="151"><div align="center"><strong>AMOUNT RS.</strong></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>1</strong></div></td>
+    <td><div align="center"><strong>PANNER TIKKA MASALA</strong></div></td>
+    <td><div align="center"><strong>90</strong></div></td>
+    <td><div align="center"><strong>2</strong></div></td>
+    <td><div align="center"><strong>180</strong></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>2</strong></div></td>
+    <td><div align="center"><strong>CHICKEN TIKKA FRY</strong></div></td>
+    <td><div align="center"><strong>125</strong></div></td>
+    <td><div align="center"><strong>2</strong></div></td>
+    <td><div align="center"><strong>250</strong></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>3</strong></div></td>
+    <td><div align="center"><strong>CHICKEN BIRYANI </strong></div></td>
+    <td><div align="center"><strong>120</strong></div></td>
+    <td><div align="center"><strong>2</strong></div></td>
+    <td><div align="center"><strong>240</strong></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>4 </strong></div></td>
+    <td><div align="center"><strong>DAL FRY</strong></div></td>
+    <td><div align="center"><strong>100</strong></div></td>
+    <td><div align="center"><strong>2</strong></div></td>
+    <td><div align="center"><strong>200</strong></div></td>
+  </tr>
+  <tr>
+    <td height="42"><div align="center"><strong>5</strong></div></td>
+    <td><div align="center"><strong>JEERA RICE</strong></div></td>
+    <td><div align="center"><strong>70</strong></div></td>
+    <td><div align="center"><strong>1</strong></div></td>
+    <td><div align="center"><strong>70</strong></div></td>
+  </tr>
+  <tr>
+    <td height="42" colspan="4"><div align="center"><strong class="style1">THE TOTAL BILL GENERATED IS:</strong></div></td>
+    <td><div align="center"><strong class="style1">940</strong></div></td>
+  </tr>
+</table>
+<p align="center"><span class="style1">CUSTOMER SIGNATURE:</span></p>
+<p align="center">&nbsp;</p>
+<p align="center"><button type="submit" class="style1" >
+<div align="center">PRINT BILL</div>
+</button>&nbsp;</p>
+</div>
+</body>
+</html>
